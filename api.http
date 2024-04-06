@@ -1,9 +1,21 @@
-  POST http://localhost:3333/events
-  Content-Type: application/json
+POST http://localhost:3333/events
+Content-Type: application/json
 
 
- {
+{
   "title": "Teste2",
   "details": "Um evento para quem é apaixonado por programação",
   "maximumAttendees": 100
- }
+}
+
+ 
+ ###
+
+
+POST http://localhost:3333/events/3ff88234-058a-4960-9113-b46de5e8d406/ateendees 
+Content-Type: application/json
+
+{
+  "name": "Francisco Bezerra",
+  "email": "franciscojunior02@hotmail.com.br"
+}
