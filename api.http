@@ -3,19 +3,17 @@ Content-Type: application/json
 
 
 {
-  "title": "Teste2",
-  "details": "Um evento para quem é apaixonado por programação",
-  "maximumAttendees": 100
+  "title": "Novo Evento1",
+  "details": null,
+  "maximumAttendees": 1
 }
 
- 
- ###
+###
 
-
-POST http://localhost:3333/events/3ff88234-058a-4960-9113-b46de5e8d406/ateendees 
+POST http://localhost:3333/events/91d037a9-f997-4e41-b129-e6cd0cced732/attendees 
 Content-Type: application/json
 
 {
   "name": "Francisco Bezerra",
-  "email": "franciscojunior02@hotmail.com.br"
+  "email": "franciscojunior02@hotmail.com.bra"
 }
