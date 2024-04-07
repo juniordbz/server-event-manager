@@ -17,6 +17,11 @@ Content-Type: application/json
   "name": "Francisco Bezerra",
   "email": "franciscojunior02@hotmail.com.bra"
 }
+
 ###
 
 GET http://localhost:3333/events/91d037a9-f997-4e41-b129-e6cd0cced732
+
+###
+
+GET http://localhost:3333/attendees/2/badge
