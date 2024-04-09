@@ -72,7 +72,7 @@ export async function getEventAttendees(app: FastifyInstance) {
           name: attendee.name,
           email: attendee.email,
           createdAt: attendee.createdAt,
-          checkInAt: attendee.checkIn?.createdAt ?? null,
+          checkedInAt: attendee.checkIn?.createdAt ?? null,
         }
       })
      })
