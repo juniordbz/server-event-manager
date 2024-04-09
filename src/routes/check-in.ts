@@ -8,6 +8,8 @@ import { prisma } from "../lib/prisma";
   .withTypeProvider<ZodTypeProvider>()
   .get('/attendees/:attendeeId/check-in', {
     schema:{
+      summary: 'Check-in  an attendees badge',
+      tags:['check-ins'],
       params: z.object({
         attendeeId: z.coerce.number().int()
       }),
