@@ -3,7 +3,7 @@ Content-Type: application/json
 
 
 {
-  "title": 123,
+  "title": "1234",
   "details": null,
   "maximumAttendees": 1
 }
