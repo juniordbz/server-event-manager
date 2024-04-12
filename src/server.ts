@@ -14,7 +14,9 @@ import { getEventAttendees } from "./routes/get-event-attendees";
 import { errorHandler } from "./error-handler";
 
 export const app = fastify().withTypeProvider<ZodTypeProvider>()
-  
+ 
+const port = process.env.PORT || 3001
+
 app.register(fastifyCors,{
   origin: '*'
 })
