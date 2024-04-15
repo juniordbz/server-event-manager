@@ -10,7 +10,7 @@
     "start": "node dist/server.mjs",
     "db:migrate": "prisma migrate dev",
     "db:studio": "prisma studio",
-    "vercel-build": "npx prisma migrate deploy"
+    "vercel-build": "dlx prisma migrate deploy"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"
