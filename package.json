@@ -11,6 +11,11 @@
     "db:studio": "prisma studio",
     "vercel-build": "prisma generate & prisma migrate deploy"
   },
+  "exports": {
+    ".": "./dist/pocketbase.cjs.js",
+    "./cjs": "./dist/pocketbase.cjs.js",
+    "./umd": "./dist/pocketbase.umd.js"
+},
   "prisma": {
     "seed": "tsx prisma/seed.ts"
   },

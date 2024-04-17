@@ -30,7 +30,6 @@ import fastifySwaggerUi from "@fastify/swagger-ui";
 import { fastifyCors } from "@fastify/cors";
 import { jsonSchemaTransform, serializerCompiler, validatorCompiler } from "fastify-type-provider-zod";
 var app = fastify().withTypeProvider();
-var port = process.env.PORT || 3001;
 app.register(fastifyCors, {
   origin: "*"
 });
