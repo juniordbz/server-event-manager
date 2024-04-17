@@ -5,13 +5,13 @@ import fastifySwaggerUi from "@fastify/swagger-ui";
 import { fastifyCors } from "@fastify/cors";
 
 import { ZodTypeProvider, jsonSchemaTransform, serializerCompiler, validatorCompiler } from 'fastify-type-provider-zod';
-import { createEvent } from "./routes/create-event";
-import { resisterForEvent } from "./routes/register-for-events";
-import { getEvent } from "./routes/get-events";
-import { getAttendeeBadge } from "./routes/get-attendee-badge";
-import { checkIn } from "./routes/check-in";
-import { getEventAttendees } from "./routes/get-event-attendees";
-import { errorHandler } from "./error-handler";
+import { createEvent } from "./routes/create-event.js";
+import { resisterForEvent } from "./routes/register-for-events.js";
+import { getEvent } from "./routes/get-events.js";
+import { getAttendeeBadge } from "./routes/get-attendee-badge.js";
+import { checkIn } from "./routes/check-in.js";
+import { getEventAttendees } from "./routes/get-event-attendees.js";
+import { errorHandler } from "./error-handler.js";
 
 export const app = fastify().withTypeProvider<ZodTypeProvider>()
 
